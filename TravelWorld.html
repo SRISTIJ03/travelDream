@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelDream - Discover Beautiful Destinations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">TravelDream</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-light text-center p-5">
+    <div class="container">
+      <h1 class="display-5">Welcome to TravelDream</h1>
+      <p class="lead">Plan your dream getaways with our curated travel inspirations.</p>
+      <a href="#destinations" class="btn-dream btn-lg ">My dream spot</a>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="container my-5">
+    <h2 class="text-center mb-4">Popular Destinations</h2>
+    <div class="row g-4">
+
+      <!-- Destination 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/paris.jpg" class="card-img-top" alt="Paris">
+          <div class="card-body">
+            <h5 class="card-title">Paris</h5>
+            <p class="card-text">The city of lights and timeless charm.</p>
+            <button class="btn btn-outline-danger like-btn" onclick="toggleHeart(this)">
+            <span class="heart-icon">🤍</span>
+            </button>
+            </button>
+            <div class="form-check form-switch text-center mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="visitedToggle" onclick="updateLabel(this)">
+            <label class="form-check-label" for="visitedToggle">Not Visited</label>
+            </div>
+                  
+          </div>
+        </div>
+      </div>
+
+      <!-- Destination 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/bali.jpg" class="card-img-top" alt="Bali">
+          <div class="card-body">
+            <h5 class="card-title">Bali</h5>
+            <p class="card-text">Tropical paradise with rich culture and beaches.</p>
+            <button class="btn btn-outline-danger like-btn" onclick="toggleHeart(this)">
+            <span class="heart-icon">🤍</span>
+            </button>
+            </button>
+            <div class="form-check form-switch text-center mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="visitedToggle" onclick="updateLabel(this)">
+            <label class="form-check-label" for="visitedToggle">Not Visited</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destination 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/Switzerland.png" class="card-img-top" alt="Switzerland">
+          <div class="card-body">
+            <h5 class="card-title">Switzerland</h5>
+            <p class="card-text">Snowy mountains, peaceful lakes, and scenic beauty.</p>
+            <button class="btn btn-outline-danger like-btn" onclick="toggleHeart(this)">
+            <span class="heart-icon">🤍</span>
+            </button>
+            </button>
+            <div class="form-check form-switch text-center mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="visitedToggle" onclick="updateLabel(this)">
+            <label class="form-check-label" for="visitedToggle">Not Visited</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Destination 4 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/bali.jpg" class="card-img-top" alt="Bali">
+          <div class="card-body">
+            <h5 class="card-title">Bali</h5>
+            <p class="card-text">Tropical paradise with rich culture and beaches.</p>
+            <button class="btn btn-outline-danger like-btn" onclick="toggleHeart(this)">
+            <span class="heart-icon">🤍</span>
+            </button>
+            </button>
+            <div class="form-check form-switch text-center mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="visitedToggle" onclick="updateLabel(this)">
+            <label class="form-check-label" for="visitedToggle">Not Visited</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Destination 5 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/maldives.jpg" class="card-img-top" alt="Bali">
+          <div class="card-body">
+            <h5 class="card-title">Maldives</h5>
+            <p class="card-text">Heaven on Earth, Where the Ocean Whispers Peace.</p>
+            <button class="btn btn-outline-danger like-btn" onclick="toggleHeart(this)">
+            <span class="heart-icon">🤍</span>
+            </button>
+            </button>
+            <div class="form-check form-switch text-center mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="visitedToggle" onclick="updateLabel(this)">
+            <label class="form-check-label" for="visitedToggle">Not Visited</label>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Destination 6 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/new zealand.jpg"class="card-img-top" alt="Bali">
+          <div class="card-body">
+            <h5 class="card-title">New Zealand</h5>
+            <p class="card-text">Adventure Meets Serenity in Every Corner.</p>
+            <button class="btn btn-outline-danger like-btn" onclick="toggleHeart(this)">
+            <span class="heart-icon">🤍</span>
+            </button>
+            </button>
+            <div class="form-check form-switch text-center mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="visitedToggle" onclick="updateLabel(this)">
+            <label class="form-check-label" for="visitedToggle">Not Visited</label>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Destination 7-->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/images.jfif" class="card-img-top" alt="Bali">
+          <div class="card-body">
+            <h5 class="card-title">Dubai</h5>
+            <p class="card-text">Where the Future Glows in the Desert Sands..</p>
+            <button class="btn btn-outline-danger like-btn" onclick="toggleHeart(this)">
+            <span class="heart-icon">🤍</span>
+            </button>
+            </button>
+            <div class="form-check form-switch text-center mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="visitedToggle" onclick="updateLabel(this)">
+            <label class="form-check-label" for="visitedToggle">Not Visited</label>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Destination 8 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/pargue.cms" class="card-img-top" alt="Bali">
+          <div class="card-body">
+            <h5 class="card-title">Prague</h5>
+            <p class="card-text">A Fairytale City with Timeless Beauty.</p>
+            <button class="btn btn-outline-danger like-btn" onclick="toggleHeart(this)">
+            <span class="heart-icon">🤍</span>
+            </button>
+            </button>
+            <div class="form-check form-switch text-center mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="visitedToggle" onclick="updateLabel(this)">
+            <label class="form-check-label" for="visitedToggle">Not Visited</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="images/kodagu.jpg" class="card-img-top" alt="Bali">
+          <div class="card-body">
+            <h5 class="card-title"> Coorg (Kodagu)</h5>
+            <p class="card-text">The Scotland of India - Misty Hills & Coffee Aroma.</p>
+            <button class="btn btn-outline-danger like-btn" onclick="toggleHeart(this)">
+            <span class="heart-icon">🤍</span>
+            </button>
+            </button>
+            <div class="form-check form-switch text-center mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="visitedToggle" onclick="updateLabel(this)">
+            <label class="form-check-label" for="visitedToggle">Not Visited</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+ <footer class="travel-footer text-white text-center p-3 mt-5">
+    &copy; 2025 TravelDream. All rights reserved.designed by SRISTI J
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  function toggleHeart(button) {
+    const heart = button.querySelector('.heart-icon');
+    if (heart.textContent === '🤍') {
+      heart.textContent = '❤️';
+      button.innerHTML = '<span class="heart-icon">❤️</span>';
+    } else {
+      heart.textContent = '🤍';
+      button.innerHTML = '<span class="heart-icon">🤍</span> ';
+    }
+  }
+  function updateLabel(switchElement) {
+    const label = switchElement.nextElementSibling;
+    if (switchElement.checked) {
+      label.textContent = "Visited";
+    } else {
+      label.textContent = "Not Visited";
+    }
+  }
+</script>
+</body>
+</html>

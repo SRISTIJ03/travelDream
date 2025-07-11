@@ -1,0 +1,65 @@
+.navbar {
+  background-color: #6f42c1 !important; /* Bootstrap purple */
+}
+
+/* Make footer match navbar */
+footer {
+  background-color: #6f42c1 !important;
+}
+
+/* Custom gradient button */
+.btn-gradient {
+  background: linear-gradient(to right, #6f42c1, #a66bff);
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #a66bff, #6f42c1);
+  transform: scale(1.05);
+}
+.travel-footer {
+  background-color: #488200; /* You can change this to any color you want */
+}
+.btn-dream {
+  background: linear-gradient(to right, #6f42c1, #a66bff); /* Purple gradient */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.btn-dream:hover {
+  background: linear-gradient(to right, #a66bff, #6f42c1);
+  transform: scale(1.05);
+}
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+.form-check-input:checked {
+  background-color: #198754;   /* Bootstrap's green */
+  border-color: #198754;
+}
+.form-check-label {
+  margin-bottom: 0;
+  margin-left: 5px; /* adjust or remove */
+}
+.heart-icon {
+  background: none;
+  border: none;
+  color: #dc3545;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.heart-icon:hover {
+  transform: scale(1.1);
+}
