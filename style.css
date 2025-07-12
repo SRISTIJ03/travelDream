@@ -1,13 +1,12 @@
 .navbar {
-  background-color: #6f42c1 !important; /* Bootstrap purple */
+  background-color: #6f42c1 !important; 
 }
 
-/* Make footer match navbar */
+
 footer {
   background-color: #6f42c1 !important;
 }
 
-/* Custom gradient button */
 .btn-gradient {
   background: linear-gradient(to right, #6f42c1, #a66bff);
   color: white;
@@ -20,10 +19,10 @@ footer {
   transform: scale(1.05);
 }
 .travel-footer {
-  background-color: #488200; /* You can change this to any color you want */
+  background-color: #488200; 
 }
 .btn-dream {
-  background: linear-gradient(to right, #6f42c1, #a66bff); /* Purple gradient */
+  background: linear-gradient(to right, #6f42c1, #a66bff); 
   color: white;
   border: none;
   padding: 12px 25px;
@@ -43,13 +42,12 @@ footer {
   object-fit: cover;
 }
 .form-check-input:checked {
-  background-color: #198754;   /* Bootstrap's green */
+  background-color: #198754;   
   border-color: #198754;
 }
 .form-check-label {
   margin-bottom: 0;
-  margin-left: 5px; /* adjust or remove */
-}
+  margin-left: 5px; }
 .heart-icon {
   background: none;
   border: none;
